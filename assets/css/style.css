@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    --verydarkdes:hsl(238, 29%, 16%);
+    --softred:hsl(14, 88%, 65%);
+    --softviolet:hsl(273, 75%, 66%);
+    --softblue:hsl(240, 73%, 65%);
+    --verydarkgra:hsl(237, 12%, 33%);
+    --darkblue:hsl(240, 6%, 50%);
+    --lightblue:hsl(240, 5%, 91%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.active1{
+    font-weight: 700;
+    color: var(--verydarkdes);
+}
+
+.active img{
+    transform: rotate(180deg);
+}
+
+.active2{
+    display: block !important;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, var(--softviolet), var(--softblue));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-faq{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 900px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.area-faq:last-child{
+    padding-bottom: 60px;
+}
+
+.faq-images{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    flex-direction: column;
+}
+
+.woman{
+    width: 420px;
+    margin-top: 40px;
+    margin-left: -100px;
+}
+
+.pattern{
+    width: 420px;
+    margin-top: -350px;
+    margin-left: -100px;
+}
+
+
+.box{
+    width: 150px;
+    margin-top: -250px;
+    margin-left: -390px;
+    z-index: 1;
+}
+
+.faq-0{
+    color: var(--verydarkdes);
+    text-align: left;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 31px;
+}
+
+.faq{
+    padding: 15px 0;
+    border-bottom: 1px solid var(--lightblue);
+}
+
+.faq-1{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-1 span:hover{
+    color:var(--softred);
+    cursor: pointer;
+}
+
+.faq-2{
+    width: 260px;
+    padding-top: 15px;
+    color: var(--verydarkgra);
+    display: none;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+@media (max-width: 1000px){
+    .area-faq{
+        max-width: 340px;
+        display: block;
+    }
+
+    .woman{
+        width: 230px;
+        margin-top: -130px;
+        margin-left: 10px;
+    }
+    
+    .pattern{
+        width: 230px;
+        margin-top: -200px;
+        margin-left: 10px;
+    }
+    
+    .box{
+        width: 85px;
+        margin-top: -130px;
+        margin-left: -155px;
+        z-index: 1;
+        padding-bottom: 60px;
+    }
+
+    .faq-0{
+        text-align: center;
+        font-size: 31px;
+    }
+    
+
+    .faq-1{
+        width: 260px;
+    }
+}
