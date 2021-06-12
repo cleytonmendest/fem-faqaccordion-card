@@ -98,6 +98,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .faq-1 span:hover{
@@ -112,6 +113,13 @@
     display: none;
     font-weight: 400;
     font-size: 12px;
+}
+
+.faq-2.active{
+    display: block;
+}
+.faq-2.active img{
+    transform: rotate(90deg);
 }
 
 @media (max-width: 1000px){
